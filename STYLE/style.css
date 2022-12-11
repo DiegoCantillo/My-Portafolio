@@ -260,7 +260,8 @@ header .banner .home-img img{
 
 @media(max-width: 497px){
     header .banner .home-img img{
-        width: 430px;
+        width: 300px;
+        object-fit: contain;
     }
 }
 
@@ -600,6 +601,12 @@ body .my-skills .container-bubbles{
     overflow: hidden;
 }
 
+@media(max-width: 986px){
+    body .my-skills .container-bubbles{
+        height: 100%;
+    }
+}
+
 body .my-skills .container-bubbles .bubbles{
     position: relative;
     display: flex;
@@ -618,6 +625,13 @@ body .my-skills .container-bubbles .bubbles span{
     animation: animate 15s linear infinite;
     animation-duration: calc(125s / var(--i));
 }
+@media(max-width: 638px){
+    body .my-skills .container-bubbles .bubbles span{
+        width: 20px;
+        height: 7px;
+    }
+}
+
 
 body .my-skills .container-bubbles .bubbles span:nth-child(even){
     background-color: #ff2d75;
