@@ -32,9 +32,38 @@ header .nav-bar ul {
     padding: 0;
 }
 
+
 @media(max-width: 616px){
     header .nav-bar ul{
+        width: 50%;
         display: none;
+        position: absolute;
+        top: 0;
+        background-color: black;
+        height: 267px;  
+        z-index: 1;
+    }
+}
+
+@media(max-width: 616px){
+    header .nav-bar ul .firtsLi{
+        margin-top: 39px;
+    }
+}
+
+@media(max-width: 616px){
+    header .nav-bar ul li{
+        margin-top: 5px;
+        padding: 10px;
+        text-align: left;
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 616px){
+    header .nav-bar ul li:hover{
+        background-color: rgb(122, 115, 115);
+        
     }
 }
 
@@ -63,6 +92,18 @@ header .nav-bar .menu-responsive{
     font-size: 30px;
     color: white;
     display: none;
+}
+
+@media(max-width: 616px){
+    header .nav-bar .close{
+        display: none;
+        z-index: 2;
+        color: white;
+        position: absolute;
+        top: 24;
+        right: 23px;
+        font-size: 25px;
+    }
 }
 
 @media(max-width: 616px){
