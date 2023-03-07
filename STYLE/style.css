@@ -63,7 +63,7 @@ header .nav-bar ul {
 
 @media(max-width: 616px){
     header .nav-bar {
-        background-color: #08080800;
+        background: linear-gradient(to right, #212a3000, #46317300)
     }
 }
 
