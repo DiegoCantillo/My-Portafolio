@@ -39,7 +39,7 @@ header .nav-bar {
     position: fixed;
     right: 0;
     z-index: 2;
-    background-color: #080808a8;
+    background: linear-gradient(to right, #212a30d0, #463173c9);
 }
 
 header .nav-bar ul {
