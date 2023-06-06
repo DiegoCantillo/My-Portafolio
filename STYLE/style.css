@@ -244,10 +244,12 @@ header .banner .home-presentation span{
 }
 
 header .banner .home-presentation .contain-cv{
+    width: 400px;
     height: 120px;
     display: flex;
     align-items: center;
     padding-left: 8px;
+    justify-content: space-between;
 }
 
 @media(max-width: 873px){
@@ -263,15 +265,11 @@ header .banner .home-presentation .contain-cv .my-cv{
 }
 
 header .banner .home-presentation .contain-cv img{
-    width: 55%;
+    width: 40%;
     margin-top: 10px;
 }
 
-@media(max-width: 873px){
-    header .banner .home-presentation .contain-cv img{
-        width: 210px;
-    }
-}
+
 
 
 header .banner .home-presentation .contain-cv .my-cv p{
@@ -598,19 +596,47 @@ body .about-me .contain_about-me .presentation-about_me .info-presentation .son_
 }
 
 body .about-me .contain_about-me .presentation-about_me .info-presentation .son_info-presentation .personal_data .whatshapp{
-    width: 70%;
+    width: 50px;
+    height: 50px;
     background-color: #10ba18;
     color: white;
     padding: 10px;
-    border-radius: 7px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    position: relative;
+}
+.whatshapp:before,
+.whatshapp:after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #10ba18dd;
+    opacity: 0;
+    z-index: -1;
+    border-radius: 50%;
+    animation: onda 1.4s infinite;
+
+}
+
+@keyframes onda{
+    0%{
+        transform: scale(1);
+    }
+    15%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: scale(2.5);
+    }
 }
 
 body .about-me .contain_about-me .presentation-about_me .info-presentation .son_info-presentation .personal_data .whatshapp:hover{
-    background-color: #248729;
+    background-color: #14b61d;
 }
 
 body .about-me .contain_about-me .presentation-about_me .info-presentation .son_info-presentation .personal_data .whatshapp i{
@@ -776,7 +802,8 @@ body .my-skills .container-skills .skill h3{
 
 body .my-projects{
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding: 20px 0;
     background: linear-gradient(to right, #0e3650, #660b52);
     display: flex;
     flex-direction: column;
@@ -805,7 +832,8 @@ body .my-projects h2{
 body .my-projects .container-projects{
     background-color: rgba(27, 19, 19, 0.684);
     width: 97%;
-    height: 80%;
+    height: auto;
+    padding: 20px 0;
     border-radius: 12px;
     display: grid;
     grid-template-columns: auto auto auto auto;
