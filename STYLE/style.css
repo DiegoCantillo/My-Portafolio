@@ -441,7 +441,10 @@ header .bubbles .bubble:nth-child(10){
 }
 
 /********************************************SECTION-ABOUT-ME*******************************************/
- .contact-container {
+/******************************/
+/******************************/
+/*CONTACT WHATSAPP ANIMATED*/
+.contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -453,6 +456,15 @@ header .bubbles .bubble:nth-child(10){
     z-index: 4;
     background: rebeccapurple;
 }
+
+@media(max-width: 653px){
+    .contact-container{
+       bottom: 90px;
+       right: -20px;
+    }
+}
+
+
 
 .contact-container .contact{
     font-size: 13px;
@@ -516,8 +528,9 @@ header .bubbles .bubble:nth-child(10){
     width: 50px;
     height: 50px;
 }
-
-/******************************************************************************************************************************/
+/*CONTACT WHATSAPP ANIMATED*/
+/******************************/
+/******************************/
 
 body .about-me{
     position: relative;
