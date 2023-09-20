@@ -220,7 +220,7 @@ header .banner .home-presentation span{
 
    animation: typing 2s steps(18), blink .5s infinite step-end alternate;
    overflow: hidden;
-
+   animation-iteration-count: infinite;
 }
 
 @media(max-width: 1110px){
@@ -243,28 +243,30 @@ header .banner .home-presentation span{
     50%{border-color: transparent}
 }
 
-header .banner .home-presentation .contain-cv{
+header .banner .home-presentation .contain-cv-and-certificate{
     width: 400px;
     height: 120px;
     display: flex;
     align-items: center;
     padding-left: 8px;
     justify-content: space-between;
+    text-align: center;
 }
 
 @media(max-width: 873px){
-    header .banner .home-presentation .contain-cv{
+    header .banner .home-presentation .contain-cv-and-certificate{
         display: flex;
         justify-content: center;
     }
 }
 
-header .banner .home-presentation .contain-cv .my-cv{
+header .banner .home-presentation .contain-cv-and-certificate .my-download{
     color: white;
     width: auto;
+    margin: 0px 2px;
 }
 
-header .banner .home-presentation .contain-cv img{
+header .banner .home-presentation .contain-cv-and-certificate img{
     width: 40%;
     margin-top: 10px;
 }
@@ -272,7 +274,7 @@ header .banner .home-presentation .contain-cv img{
 
 
 
-header .banner .home-presentation .contain-cv .my-cv p{
+header .banner .home-presentation .contain-cv-and-certificate .my-download p{
     padding: 15px 20px;
     background-color: rgb(147, 130, 147);
     border-radius: 7px;
@@ -280,13 +282,13 @@ header .banner .home-presentation .contain-cv .my-cv p{
 }
 
 @media(max-width: 453px){
-    header .banner .home-presentation .contain-cv .my-cv p{
+    header .banner .home-presentation .contain-cv-and-certificate .my-download p{
         font-size: 12px;
         padding: 10px 15px;
     }
 }
 
-header .banner .home-presentation .contain-cv .my-cv p:hover{
+header .banner .home-presentation .contain-cv-and-certificate .my-download p:hover{
     background-color: white;
     color: #212a30;
     transition: 1s;
@@ -346,14 +348,14 @@ header .bubbles .bubble2:nth-child(1){
     width: 80px;
     height: 80px;
     left: 5%;
-    animation-duration: 3s;
-    animation-delay: 3s;
+    animation-duration: 8s;
+    animation-delay: 8s;
 }
 header .bubbles .bubble:nth-child(2){
     width: 100px;
     height: 100px;
     left: 35%;
-    animation-duration: 3s;
+    animation-duration: 8s;
     animation-delay: 5s;
 }
 header .bubbles .bubble:nth-child(3){
@@ -439,6 +441,83 @@ header .bubbles .bubble:nth-child(10){
 }
 
 /********************************************SECTION-ABOUT-ME*******************************************/
+ .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    height: 0px;
+    position: fixed;
+    bottom: 140px;
+    right: 10px;
+    z-index: 4;
+    background: rebeccapurple;
+}
+
+.contact-container .contact{
+    font-size: 13px;
+    margin-top: 18px;
+    color: white;
+    font-weight: 500;
+    z-index: -1;
+}
+
+ .whatshapp{
+    width: 50px;
+    height: 50px;
+    background-color: #10ba18;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+}
+.whatshapp:before,
+.whatshapp:after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #118a17dd;
+    opacity: 0;
+    z-index: -1;
+    border-radius: 50%;
+    animation: onda 1.4s infinite;
+
+}
+
+@keyframes onda{
+    0%{
+        transform: scale(1);
+    }
+    15%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+
+.whatshapp:hover{
+    background-color: #14b61d;
+}
+
+.whatshapp i{
+    font-size: 30px;
+    color: white;
+    font-weight: 900;
+}
+
+.whatshapp img{
+    width: 50px;
+    height: 50px;
+}
+
+/******************************************************************************************************************************/
 
 body .about-me{
     position: relative;
@@ -595,66 +674,12 @@ body .about-me .contain_about-me .presentation-about_me .info-presentation .son_
     }
 }
 
-body .about-me .contain_about-me .presentation-about_me .info-presentation .son_info-presentation .personal_data .whatshapp{
-    width: 50px;
-    height: 50px;
-    background-color: #10ba18;
-    color: white;
-    padding: 10px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    position: relative;
-}
-.whatshapp:before,
-.whatshapp:after{
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: #10ba18dd;
-    opacity: 0;
-    z-index: -1;
-    border-radius: 50%;
-    animation: onda 1.4s infinite;
-
-}
-
-@keyframes onda{
-    0%{
-        transform: scale(1);
-    }
-    15%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: scale(2.5);
-    }
-}
-
-body .about-me .contain_about-me .presentation-about_me .info-presentation .son_info-presentation .personal_data .whatshapp:hover{
-    background-color: #14b61d;
-}
-
-body .about-me .contain_about-me .presentation-about_me .info-presentation .son_info-presentation .personal_data .whatshapp i{
-    font-size: 30px;
-    color: white;
-    font-weight: 900;
-}
-
-body .about-me .contain_about-me .presentation-about_me .info-presentation .son_info-presentation .personal_data .whatshapp img{
-    width: 50px;
-    height: 50px;
-}
-
 /****************************************************SECTION-MY-SKILLS********************************************************/
 
 body .my-skills{
     width: 100%;
-    height: 100vh;
+    height: auto;
+    padding: 70px 0px;
     background-color: black;
     position: relative;
     display: flex;
@@ -741,7 +766,7 @@ body .my-skills .container-bubbles .bubbles span:nth-child(even){
 body .my-skills .container-skills{
     width: 80%;
     height: auto;
-    padding: 5px;
+    padding: 30px 0px;
     background-color: rgba(255, 255, 255, 0.545);
     border-radius: 12px;
     z-index: 1;
@@ -770,6 +795,7 @@ body .my-skills .container-skills{
 
 body .my-skills .container-skills .skill{
     width: 90%;
+    margin-bottom: 7px;
     height: auto;
     display: flex;
     flex-direction: column;

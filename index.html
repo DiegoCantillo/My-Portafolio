@@ -20,6 +20,17 @@
 </head>
 
 <body>
+
+    <div class="contact-container">
+        <a href="https://wa.me/573013458690?text=%C2%A1Hola%20Diego!%20nos%20interesa%20tu%20perfil%20como%20desarrollador%20Front-end."
+            class="whatshapp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <div class="contact">
+            <p>contactame</p>
+        </div>
+    </div>
+
     <header id="home" class="bg-animate">
         <nav class="nav-bar">
             <ul class="navigation">
@@ -37,13 +48,22 @@
         <section class="banner home-main-container">
             <div class="home-presentation">
                 <h2>¡Hola! Soy Luis Diego <br> Cantillo Meza</h2>
-                <span>FrontEnd Developer.</span>
-                <div class="contain-cv">
-                    <a href="./DOC/Cv___Luis-Diego-Cantillo-Meza.pdf" class="my-cv">
-                        <p>Mí CV aquí <i class="fa-solid fa-file-arrow-down"></i></p>
-                    </a>
+                <span class="text-animation" id="text-animation">FrontEnd Developer.</span>
+                <div class="contain-cv-and-certificate">
+
+                    <div class="download">
+                        <a href="./DOC/Cv-LuisDiegoCantillo-FronEnd.pdf" target="_blank" class="my-download">
+                            <p>Mí CV aquí <i class="fa-solid fa-file-arrow-down"></i></p>
+                        </a>
+
+                        <a href="./DOC/MisCertificados.pdf" target="_blank" class="my-download">
+                            <p>Mís Certificados<i class="fa-solid fa-file-arrow-down"></i></p>
+                        </a>
+                    </div>
                     <img src="./IMAGENES/logo-dcm.png" alt="">
+
                 </div>
+
             </div>
             <div class="home-img">
                 <img src="./IMAGENES/img_home-portafolio.png" alt="">
@@ -70,7 +90,8 @@
                 <div class="info-presentation">
                     <div class="son_info-presentation">
                         <p>
-                            <span>Soy Luis Diego Cantillo Meza, Desarrollador Web</span> inclinado por el front-end, con experiencia en desarrollo de Proyectos. Me
+                            <span>Soy Luis Diego Cantillo Meza, Desarrollador Web</span> inclinado por el front-end, con
+                            experiencia en desarrollo de Proyectos. Me
                             caracterizo por tener liderazgo al momento de trabajar
                             en equipo creando así un buen ambiente laboral, con disposición al crecimiento profesional y
                             personal para así mismo aportar al <span>genuino desarrollo</span> de tu
@@ -89,13 +110,6 @@
                             <p><span>Edad:</span> 25 <i class="fa-solid fa-cake-candles"></i>.</p>
                             <p><span>Email:</span> diegocantymez@gmail.com <i class="fa-solid fa-envelope"></i>.</p>
                             <p><span>Celular:</span> 3013458590 <i class="fa-solid fa-phone"></i>.</p>
-                            <a href="https://wa.me/573013458690?text=%C2%A1Hola%20Diego!%20nos%20interesa%20tu%20perfil%20como%20desarrollador%20Front-end."
-                                class="whatshapp">
-                                <i class="fa-brands fa-whatsapp"></i>
-                            </a>
-                            <div class="contact">
-                                <p style="font-size:12px">Click al icono para contactarme</p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -160,7 +174,19 @@
                 <h3>CSS</h3>
             </div>
             <div class="skill">
+                <img src="./IMAGENES/tailwindCssLogo.webp" alt="logo-css3">
+                <h3>TailwindCSS</h3>
+            </div>
+            <div class="skill">
+                <img src="./IMAGENES/React-Bootstrap-Logo.svg" alt="React-Bootstrap-Logo">
+                <h3>React Bootstrap</h3>
+            </div>
+            <div class="skill">
                 <img src="./IMAGENES/js-logo.png" alt="logo-js">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill">
+                <img src="./IMAGENES/Typescript_logo.png" alt="logo-Ts">
                 <h3>JavaScript</h3>
             </div>
             <div class="skill">
@@ -170,6 +196,10 @@
             <div class="skill">
                 <img src="./IMAGENES/react-router_logo.png" alt="logo-react-router">
                 <h3>React Router</h3>
+            </div>
+            <div class="skill">
+                <img src="./IMAGENES/WouterLogo.svg" alt="logo-wouter">
+                <h3>Wouter Router</h3>
             </div>
             <div class="skill">
                 <img src="./IMAGENES/redux-logo.png" alt="logo-redux">
@@ -188,14 +218,14 @@
     <section class="my-projects" id="projects">
         <h2>{Proyectos}</h2>
         <div class="container-projects">
-            <a href="https://ecommerceproject5diegocantillo.netlify.app/" class="project">
+            <a href="https://ecommerceproject5diegocantillo.netlify.app/" target="_blank" class="project">
                 <img src="./IMG-PROJECTS/img-ecommerce.png" alt="ecommerce">
                 <div class="capa">
                     <h3>Ecommerce</h3>
                     <p>Aplicación Web que simula una tienda virtual.</p>
                 </div>
             </a>
-            <a href="https://gamepacmandiegocantillo.netlify.app/" class="project">
+            <a href="https://gamepacmandiegocantillo.netlify.app/" target="_blank" class="project">
                 <img src="./IMG-PROJECTS/gamePacman.png" alt="ecommerce">
                 <div class="capa">
                     <h3>Pac-Man Juego</h3>
@@ -203,7 +233,7 @@
                     <p><b> Nota: Solo disponible en laptops</b></p>
                 </div>
             </a>
-            <a href="https://box-shadowgerator.netlify.app/" class="project">
+            <a href="https://box-shadowgerator.netlify.app/" target="_blank" class="project">
                 <img src="./IMG-PROJECTS/img-Generadorbox-shadow.png" alt="generador-box-shadow">
                 <div class="capa">
                     <h3>Box-shadow generator</h3>
@@ -211,7 +241,7 @@
                         el código a utilizar.</p>
                 </div>
             </a>
-            <a href="https://diegocantillopokedexoriginal.netlify.app/" class="project">
+            <a href="https://diegocantillopokedexoriginal.netlify.app/" target="_blank" class="project">
                 <img src="./IMG-PROJECTs/img-pokedex.png" alt="pokedex" style="height: 225px;">
                 <div class="capa">
                     <h3>Pokedex</h3>
@@ -219,42 +249,42 @@
                         habilidades.</p>
                 </div>
             </a>
-            <a href="https://proyect1-usestate-react-ldcm.netlify.app/" class="project">
+            <a href="https://proyect1-usestate-react-ldcm.netlify.app/" target="_blank" class="project">
                 <img src="./IMG-PROJECTS/img-quotesApp.png" alt="quotes" style="height: 225px;"">
                 <div class=" capa">
                 <h3>Quotes App</h3>
                 <p>Lectura de pensamientos filosóficos de manera entretenida.</p>
         </div>
         </a>
-        <a href="https://proyec3rickandmortydiegocantillo.netlify.app" class="project">
+        <a href="https://proyec3rickandmortydiegocantillo.netlify.app" target="_blank" class="project">
             <img src="./IMG-PROJECTS/img-rick-&-morty.png" alt="rick&morty">
             <div class="capa">
                 <h3>Revista Rick And Morty</h3>
                 <p>Catalogo Entretenido y dinámico para explorar todos los Personajes de Rick And Morty.</p>
             </div>
         </a>
-        <a href="https://weatherapp-luisdiegocm.netlify.app/" class="project">
+        <a href="https://weatherapp-luisdiegocm.netlify.app/" target="_blank" class="project">
             <img src="./IMG-PROJECTS/img-weather-App..png" alt="WeatherApp">
             <div class="capa">
                 <h3>Weather App</h3>
                 <p>Esta App describe en tiempo real el estado atmosférico según tu ubicación.</p>
             </div>
         </a>
-        <a href="https://calculator-dieg-cantmez.netlify.app/" class="project">
+        <a href="https://calculator-dieg-cantmez.netlify.app/" target="_blank" class="project">
             <img src="./IMG-PROJECTS/img-Calculator.png" alt="calculator">
             <div class="capa">
                 <h3>Calculadora</h3>
                 <p>Calculadora funcional echa con HTML, CSS y JavaScript puro.</p>
             </div>
         </a>
-        <a href="https://crud-diegocantillo-pryect4.netlify.app/" class="project">
+        <a href="https://crud-diegocantillo-pryect4.netlify.app/" target="_blank" class="project">
             <img src="./IMG-PROJECTS/adminUsers.png" alt="maquetacion">
             <div class="capa">
                 <h3>Administrador de usuarios</h3>
                 <p>simulador de administrador de usuaios, crea, elimina y edita</p>
             </div>
         </a>
-        <a href="https://first-portfolio-diego.netlify.app/#" class="project">
+        <a href="https://first-portfolio-diego.netlify.app/#" target="_blank" class="project">
             <img src="./IMG-PROJECTS/maquetado1.png" alt="maquetacion">
             <div class="capa">
                 <h3>Maquetacion</h3>
@@ -270,23 +300,25 @@
     <div class="contain-img">
         <span>Click Aquí ⤵️</span>
         <a href="mailto:diegocantymez@gmail.com?subject=Estamos%20Interesados%20en%20tu%20perfil." class="img_contact">
-                <img src="./IMAGENES/contactame.gif" alt="contact-me-img">
-                <div class="capa">
-                    <h3>dieocantymez@gmail.com</h3>
-                    <p>Dispuesto para nuestro genuino crecimiento y desarrollo.</p>
-                </div>
+            <img src="./IMAGENES/contactame.gif" alt="contact-me-img">
+            <div class="capa">
+                <h3>dieocantymez@gmail.com</h3>
+                <p>Dispuesto para nuestro genuino crecimiento y desarrollo.</p>
+            </div>
         </a>
     </div>
     <div class="social-and-copyrigth">
-            <div class="social-red">
-                <a href="https://www.linkedin.com/in/luiscantillomeza-2460b6253/">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://wa.me/573013458690?text=%C2%A1Hola%20Diego!%20nos%20interesa%20tu%20perfil%20como%20desarrollador%20Front-end.">
-                    <i class="fa-brands fa-square-whatsapp"></i>
-                </a>
-            </div>
+        <div class="social-red">
+            <a href="https://www.linkedin.com/in/luiscantillomeza-2460b6253/">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+                href="https://wa.me/573013458690?text=%C2%A1Hola%20Diego!%20nos%20interesa%20tu%20perfil%20como%20desarrollador%20Front-end.">
+                <i class="fa-brands fa-square-whatsapp"></i>
+            </a>
+        </div>
         <p><span>&#169;todos los derechos reservados</span> - Luis Diego Cantillo Meza</p>
     </div>
 </footer>
+
 </html>
