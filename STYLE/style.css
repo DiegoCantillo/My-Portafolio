@@ -836,6 +836,183 @@ body .my-skills .container-skills .skill h3{
     font-size: 22px;
 }
 
+/******************************************SECTION-PARTICIPATION-IN-PROJECTS***********************************************/
+
+body .participation-in-project{
+    height: 95vh;
+    padding: 0 2rem;
+    position: relative;
+    background: #000;
+}
+
+@media(max-width: 1217px){
+    body .participation-in-project{
+        height: auto;
+        padding-bottom: 15px;
+    }
+}
+/* body .participation-in-project .fondo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+} */
+
+body .participation-in-project h2{
+    padding-top: 15px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+@media(max-width: 1217px){
+    body .participation-in-project h2{
+        margin-bottom: 12px;
+    }
+}
+
+@media(max-width: 424px){
+    body .participation-in-project h2{
+        font-size: 30px;
+    }
+}
+
+/*******************************************************SLIDERS******************************************************/
+body .participation-in-project .container-slider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media(max-width: 1217px){
+    body .participation-in-project .container-slider{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+body .participation-in-project .container-slider .container{
+    width: 550px;
+    position: relative;
+    box-shadow: 4px 6px 33px -2px rgba(255,117,255,1);
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid pink;
+    filter: grayscale(1);
+}
+
+@media(max-width: 1217px){
+    body .participation-in-project .container-slider .container{
+        margin: 15px 0;
+    }
+}
+@media(max-width:593px) {
+    body .participation-in-project .container-slider .container{
+        width: 370px;
+    }
+    body .participation-in-project .container-slider .prev,
+    .next{
+        padding: 5px;
+    }
+}
+
+body .participation-in-project .container-slider .container:hover{
+    filter: grayscale(0);
+}
+
+body .participation-in-project .container-slider  .mySlides{
+    display: none;
+}
+body .participation-in-project .container-slider .mySlides img{
+    width: 100%;
+    height: 330px;
+}
+
+@media(max-width:593px) {
+    body .participation-in-project .container-slider .mySlides img{
+        height: 230px;
+    }
+}
+
+body .participation-in-project .container-slider .prev,
+.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    border:  solid #fff 2px;
+    background: #da0c84;
+}
+body .participation-in-project .container-slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+body .participation-in-project .container-slider .prev:hover,
+.next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+body .participation-in-project .container-slider .elements{
+    text-align: center;
+    margin-bottom: 6px;
+}
+body .participation-in-project .container-slider .quadrate{
+    cursor: pointer;
+    height: 4px;
+    width: 30px;
+    margin: 0 2px;
+    background-color: #717171;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 2px;
+}
+body .participation-in-project .container-slider .active, .quadrate:hover{
+    background-color: #fff;
+}
+
+/*******************************************************SLIDERS2******************************************************/
+
+body .participation-in-project .container-slider  .mySlides1{
+    display: none;
+}
+body .participation-in-project .container-slider .mySlides1 img{
+    width: 100%;
+    height: 330px;
+}
+@media(max-width:593px) {
+    body .participation-in-project .container-slider .mySlides1 img{
+        height: 230px;
+    }
+}
+body .participation-in-project .container-slider .quadrate1{
+    cursor: pointer;
+    height: 4px;
+    width: 30px;
+    margin: 0 2px;
+    background-color: #717171;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 2px;
+}
+body .participation-in-project .container-slider .active1, .quadrate:hover{
+    background-color: #fff;
+}
+
 
 /************************************************SECTION-MY-PROJECTS**************************************************/
 
@@ -928,12 +1105,15 @@ body .my-projects .container-projects .project{
     justify-content: center;
     text-align: center;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 
 body .my-projects .container-projects .project img{
     width: 300px;
+    height: 220px;
     border-radius: 10px;
+    object-fit:cover ;
 }
 
 @media(max-width: 1293px){
@@ -954,7 +1134,7 @@ body .my-projects .container-projects .project .capa{
     height: 100%;
     position: absolute;
     top: 0;
-    background-color: rgba(6, 174, 208, 0.7);
+    background-color: rgba(0, 0, 0, 0.937);
     border-radius: 10px;
     opacity: 0;
     visibility: hidden;
@@ -965,10 +1145,11 @@ body .my-projects .container-projects .project .capa{
 body .my-projects .container-projects .project:hover > .capa{
     opacity: 1;
     visibility: visible;
+    padding: 0 2px;
 }
 
 body .my-projects .container-projects .project:hover > .capa h3{
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 15px;
 }
 
