@@ -909,6 +909,38 @@ body .participation-in-project .container-slider .container{
     filter: grayscale(1);
 }
 
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+body .participation-in-project .container-slider .container .container-git {
+    width: 40px;
+    height: 40px;
+    animation: blink 1.5s infinite;
+    background-color: rgb(116, 114, 114);
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    border: solid rgb(116, 114, 114);;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+body .participation-in-project .container-slider .container .container-git:hover{
+   animation: none;
+   background-color: white;
+   border-color: white;
+}
+
 @media(max-width: 1217px){
     body .participation-in-project .container-slider .container{
         margin: 15px 0;
@@ -928,16 +960,45 @@ body .participation-in-project .container-slider .container:hover{
     filter: grayscale(0);
 }
 
-body .participation-in-project .container-slider  .mySlides{
-    display: none;
+
+body .participation-in-project .container-slider .container .mySlides .description-project{
+    height: 330px !important;
+    padding: 0 3.5rem;
+    background: #000000e0;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
 }
-body .participation-in-project .container-slider .mySlides img{
+
+@media(max-width:593px) {
+    body .participation-in-project .container-slider .container  .mySlides .description-project{
+        height: 230px !important;
+        font-size: 13px;
+    }
+}
+
+body .participation-in-project .container-slider .container .mySlides .description-project .bg_container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+body .participation-in-project .container-slider .container .mySlides img{
     width: 100%;
     height: 330px;
 }
 
 @media(max-width:593px) {
-    body .participation-in-project .container-slider .mySlides img{
+    body .participation-in-project .container-slider .container .mySlides img{
         height: 230px;
     }
 }
@@ -968,8 +1029,12 @@ body .participation-in-project .container-slider .prev:hover,
     background-color: rgba(0, 0, 0, 0.8);
 }
 body .participation-in-project .container-slider .elements{
+    height: 25px;
     text-align: center;
-    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
 }
 body .participation-in-project .container-slider .quadrate{
     cursor: pointer;
@@ -990,6 +1055,36 @@ body .participation-in-project .container-slider .active, .quadrate:hover{
 body .participation-in-project .container-slider  .mySlides1{
     display: none;
 }
+
+body .participation-in-project .container-slider .container .mySlides1 .description-project{
+    height: 330px !important;
+    background: #000000e0;
+    padding: 0 3.5rem;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+@media(max-width:593px) {
+    body .participation-in-project .container-slider .container  .mySlides1 .description-project{
+        height: 230px !important;
+        font-size: 13px;
+    }
+}
+
+body .participation-in-project .container-slider .container .mySlides1 .description-project .bg_container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
 body .participation-in-project .container-slider .mySlides1 img{
     width: 100%;
     height: 330px;
@@ -1039,6 +1134,7 @@ body .my-projects h2{
     top: 15px;
     margin: 10px;
 }
+
 @media(max-width: 424px){
     body .my-projects h2{
         font-size: 30px;
