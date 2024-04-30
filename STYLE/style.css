@@ -967,7 +967,9 @@ body .participation-in-project .container-slider .container .mySlides .descripti
     background: #000000e0;
     text-align: justify;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: white;
     position: relative;
 }
@@ -1062,6 +1064,8 @@ body .participation-in-project .container-slider .container .mySlides1 .descript
     padding: 0 3.5rem;
     text-align: justify;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     color: white;
 }
