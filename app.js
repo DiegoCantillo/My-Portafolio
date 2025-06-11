@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
         if (targetElement) {
           targetElement.scrollIntoView({
-            behavior: 'smooth' // Desplazamiento suave
+            behavior: 'smooth' 
           });
         }
       });
